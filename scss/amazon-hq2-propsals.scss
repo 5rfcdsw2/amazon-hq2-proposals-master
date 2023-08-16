@@ -1,0 +1,53 @@
+$amazon-orange: #ff9900;
+
+$jumbotron-bg:      lighten($amazon-orange, 20%);
+$brand-primary:     $amazon-orange;
+$border-radius-lg:  0;
+
+$map-height:    480px;
+$footer-height: 60px;
+
+@import "bootstrap/bootstrap";
+
+//
+// Customizations to Bootstrap.
+nav {
+  background-color: $amazon-orange;
+
+  a.navbar-brand {
+    color: $black;
+  }
+}
+
+div#my-map {
+  height: $map-height;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: $footer-height;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: $footer-height;
+  line-height: $footer-height; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+.resource {
+  .icon-disabled {
+    color: lighten($gray-light, 30%);
+  }
+
+  margin-left: 10px;
+}
